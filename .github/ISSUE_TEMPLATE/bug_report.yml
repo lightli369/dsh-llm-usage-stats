@@ -1,0 +1,45 @@
+name: Bug 报告
+description: 插件使用中遇到的问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: 感谢反馈！请尽量提供以下信息，方便复现与定位。
+  - type: input
+    id: version
+    attributes:
+      label: 插件版本
+      description: package.json 中的 version，或安装方式（github 分支 / tag）
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: dsh-version
+    attributes:
+      label: Harness 环境
+      description: dsh 版本、操作系统（macOS/Windows/Linux）
+      placeholder: "macOS"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 问题描述
+      description: 发生了什么？期望是什么？
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      placeholder: "1. ...\n2. ..."
+  - type: textarea
+    id: logs
+    attributes:
+      label: 相关日志/截图（可选）
+      description: Host 日志中 [llm-usage] 开头的报错、页面截图等
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息（可选）
