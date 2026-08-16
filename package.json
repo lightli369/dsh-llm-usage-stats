@@ -1,6 +1,6 @@
 {
   "name": "dsh-llm-usage-stats",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DSH web plugin: per-model LLM token usage dashboard in Settings (input/output/cache tokens, cache hit rate; day/week/month/custom ranges; model filter; clearable daily JSON logs under ~/.dsh/llm-usage-stats).",
   "type": "module",
   "main": "lib/index.js",
